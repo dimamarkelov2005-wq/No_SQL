@@ -41,6 +41,9 @@ tours.countryId → countries._id
 
 ---
 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/da218550-dc3d-42b8-bbf9-6ddb1fef0e72" />
+
+
 ## 2. Структура документа `tours`
 
 Пример документа:
@@ -77,6 +80,8 @@ tours.countryId → countries._id
     ]
 }
 ```
+
+<img width="375" height="675" alt="image" src="https://github.com/user-attachments/assets/2d31d5d8-9e06-4f3c-8a1a-69c2fadab91e" />
 
 ### Использованные типы моделирования
 
