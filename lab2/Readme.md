@@ -397,32 +397,12 @@ countryId: 101
 
 ---
 
-## 12. Скриншоты для отчёта
-
-Рекомендуется добавить в репозиторий папку:
-
-```text
-screenshots/
-```
-
-и сохранить туда следующие изображения:
-
-| Файл | Что показать |
-|---|---|
-| `01_database.png` | база `travelDB`, коллекции `tours` и `countries` |
-| `02_tours.png` | 10 документов коллекции `tours` |
-| `03_embedded.png` | Embedded Document `hotel` |
-| `04_excursions.png` | массив Embedded Documents `excursions` |
-| `05_dot_notation.png` | запрос `"hotel.stars": 5` |
-| `06_dot_condition.png` | Dot Notation + условие `price` |
-| `07_array.png` | поиск `services: "Transfer"` |
-| `08_all.png` | оператор `$all` |
-| `09_push.png` | результат `$push`, где появился `Insurance` |
-| `10_countries.png` | коллекция `countries` |
-| `11_reference.png` | `countryId` в документе тура |
-| `12_lookup.png` | результат `$lookup` с `countryInfo` |
-
-> Лучше делать отдельный скриншот для каждого важного этапа. Если несколько команд хорошо видны на одном скриншоте, его тоже можно использовать.
+## 12. Остальные скриншоты
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/01e35d2f-4c45-463a-be5e-d7c4ca5465d5" />
+<img width="1910" height="1079" alt="image" src="https://github.com/user-attachments/assets/c132b61f-c13d-4deb-b64d-f444d3351191" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/7d12e432-235b-4cb7-8cb2-c9e303131116" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/6c90cbca-9356-4072-97ba-10a784573166" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/53811c2c-003f-4b85-a8f1-5c80220654ca" />
 
 ---
 
