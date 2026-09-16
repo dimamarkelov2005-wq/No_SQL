@@ -32,7 +32,6 @@
 ### 3.1. Создание БД и вставка данных (Create / Insert)
 Переключение на базу данных `shopDB`, создание коллекции `products` и заполнение исходными данными (10+ документов):
 
-```javascript
 use shopDB
 db.createCollection("products")
 
