@@ -36,14 +36,14 @@
   "rating": 4.7,
   "tags": ["office", "programming"]
 }
-Коллекция customers
+### Коллекция `customers`
 {
   "_id": { "$oid": "6ab360174a54312663052305" },
   "customerId": 501,
   "name": "Aidar",
   "city": "Almaty"
 }
-Коллекция orders
+### Коллекция `orders`
 {
   "_id": { "$oid": "6ab3601e4a54312663052308" },
   "orderId": "ORD-1",
