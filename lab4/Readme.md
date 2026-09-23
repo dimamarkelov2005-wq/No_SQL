@@ -37,6 +37,8 @@
 ## 3. Структура коллекций и тестовые данные
 
 База данных состоит из трех связанных коллекций. Основная коллекция `products` содержит 30 документов (товары различного назначения, цен, категорий и тегов).
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/0626aa29-123b-497a-9808-1c640ca685a4" />
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/98bd3bbe-bd48-4125-a776-8cc6e6b43965" />
 
 ### 3.1. Схема документов коллекции `products`
 
@@ -52,9 +54,9 @@
   "tags": ["office", "programming"]
 }
 
-<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/14254b4e-c5e7-42ff-8940-1584346db062" />
-
 ```
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/e30c8872-5cce-46e9-9a6f-7981b7a661ea" />
+
 
 ### 3.2. Схема документов коллекции `customers`
 
@@ -67,6 +69,7 @@
 }
 
 ```
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/a5efc3f3-0768-4b60-a6e4-3f1e1ebf87c4" />
 
 ### 3.3. Схема документов коллекции `orders`
 
@@ -80,6 +83,7 @@
 }
 
 ```
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/47d2dc5e-5d58-43f3-a8af-0a50144f55e5" />
 
 ## 4. Выполнение практических заданий (Aggregation Pipeline)
 
