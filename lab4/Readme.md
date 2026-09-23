@@ -52,6 +52,8 @@
   "tags": ["office", "programming"]
 }
 
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/14254b4e-c5e7-42ff-8940-1584346db062" />
+
 ```
 
 ### 3.2. Схема документов коллекции `customers`
