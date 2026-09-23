@@ -37,6 +37,8 @@
   "tags": ["office", "programming"]
 }
 ### Коллекция `customers`
+
+```json
 {
   "_id": { "$oid": "6ab360174a54312663052305" },
   "customerId": 501,
@@ -44,6 +46,8 @@
   "city": "Almaty"
 }
 ### Коллекция `orders`
+
+```json
 {
   "_id": { "$oid": "6ab3601e4a54312663052308" },
   "orderId": "ORD-1",
@@ -54,6 +58,8 @@
 4. Запросы Aggregation Pipeline (не менее 10)
 Запрос 1 ($match по строковому полю)
 Фильтрация товаров из категории Notebook.
+```json
+
 db.products.aggregate([
   { $match: { category: "Notebook" } }
 ])
