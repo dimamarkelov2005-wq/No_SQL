@@ -1,0 +1,71 @@
+-- =============================================
+-- БЛОК 1. Проверка работы среды (Этап 1)
+-- =============================================
+SET lab5:test "Redis works"
+GET lab5:test
+DEL lab5:test
+
+-- =============================================
+-- БЛОК 2. Создание сессий пользователей (Этап 2)
+-- =============================================
+HSET session:s001 user_id "1001" role "student" language "ru" last_section "timetable"
+EXPIRE session:s001 1800
+
+HSET session:s002 user_id "1002" role "student" language "kk" last_section "courses"
+EXPIRE session:s002 1800
+
+HSET session:s003 user_id "501" role "teacher" language "ru" last_section "journal"
+EXPIRE session:s003 900
+
+HGETALL session:s001
+TTL session:s001
+
+-- =============================================
+-- БЛОК 3. Обновление и удаление сессии (Этап 3)
+-- =============================================
+HSET session:s001 language "en"
+HGET session:s001 language
+DEL session:s003
+EXISTS session:s003
+
+-- =============================================
+-- БЛОК 4. Кэширование курсов и расписания (Этап 4)
+-- =============================================
+HSET cache:course:CS305 name "NoSQL Technologies" teacher "A. Teacher" room "305" semester "5"
+EXPIRE cache:course:CS305 600
+
+HSET cache:course:DB201 name "Database Systems" teacher "B. Teacher" room "201" semester "4"
+EXPIRE cache:course:DB201 600
+
+HSET cache:schedule:IS-21 monday "CS305 (305)" tuesday "DB201 (201)" wednesday "WEB301 (102)"
+EXPIRE cache:schedule:IS-21 300
+
+HGETALL cache:course:CS305
+TTL cache:course:CS305
+
+-- =============================================
+-- БЛОК 5. Аналитика, списки и множества (Этап 5)
+-- =============================================
+SET counter:course:CS305:views 0
+INCR counter:course:CS305:views
+INCR counter:course:CS305:views
+GET counter:course:CS305:views
+
+SADD course:CS305:online "student:1001" "student:1002" "teacher:501"
+SMEMBERS course:CS305:online
+
+LPUSH recent:student:1001 "course:CS305"
+LPUSH recent:student:1001 "course:DB201"
+LPUSH recent:student:1001 "course:WEB301"
+LRANGE recent:student:1001 0 4
+
+-- =============================================
+-- БЛОК 6. Инвалидация и обновление кэша (Этап 6)
+-- =============================================
+DEL cache:course:CS305
+EXISTS cache:course:CS305
+
+HSET cache:course:CS305 name "NoSQL Technologies" teacher "A. Teacher" room "410" semester "5"
+EXPIRE cache:course:CS305 600
+
+HGET cache:course:CS305 room
