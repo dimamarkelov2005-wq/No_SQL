@@ -48,7 +48,7 @@
 ### Этап 3. Настройка составных индексов
 
 Для имитации эффективной адресации Wide-column модели созданы составные индексы (Compound Indexes):
-
+```javascript
 
 // Индекс для быстрых выборок и сортировки по группе
 db.schedule_by_group.createIndex({ group_id: 1, lesson_date: 1, lesson_time: 1 });
