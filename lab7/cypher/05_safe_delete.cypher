@@ -1,8 +1,3 @@
-// ============================================================
-// 05_safe_delete.cypher
-// Безопасное удаление связи (с предварительной проверкой)
-// ============================================================
-
 // Шаг 1. Сначала ПОКАЗЫВАЕМ выбранную связь
 MATCH (s:Student {studentId: 1005})-[r:ENROLLED_IN]->(c:Course {code: 'PROG102'})
 RETURN s.name AS student, type(r) AS relation, c.code AS course, r.semester AS semester;
