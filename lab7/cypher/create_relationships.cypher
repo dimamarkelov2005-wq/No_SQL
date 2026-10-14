@@ -1,9 +1,3 @@
-// ============================================================
-// 02_create_relationships.cypher
-// Создание отношений: ENROLLED_IN, TEACHES, REQUIRES
-// Всего: 8 + 6 + 8 = 22 отношения
-// ============================================================
-
 // --- ENROLLED_IN (8) ---
 MATCH (s:Student {studentId: 1001}), (c:Course {code: 'NOSQL301'})
 MERGE (s)-[:ENROLLED_IN {semester: '2026-Fall'}]->(c);
