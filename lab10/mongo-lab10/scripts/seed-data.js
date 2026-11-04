@@ -6,7 +6,6 @@ db.orders.insertMany([
   { item: "cardboard", qty: 25, status: "A" },
   { item: "paper", qty: 100, status: "B" },
   { item: "planner", qty: 75, status: "A" }
-  // ... сюда можно добавить остальные документы
 ], { 
   writeConcern: { w: "majority", wtimeout: 5000 } 
 });
