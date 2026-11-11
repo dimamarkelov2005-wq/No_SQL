@@ -30,7 +30,7 @@
                                                            -------->| Shard C (Часть данных)|
                                                                    +-----------------------+
 ```
-!terminal_result.png <img width="1009" height="612" alt="image" src="https://github.com/user-attachments/assets/3d0ebdeb-d14e-4e94-89af-62e85f177068" />
+<img width="1009" height="612" alt="image" src="https://github.com/user-attachments/assets/3d0ebdeb-d14e-4e94-89af-62e85f177068" /> terminal_result
 
 ---
 
